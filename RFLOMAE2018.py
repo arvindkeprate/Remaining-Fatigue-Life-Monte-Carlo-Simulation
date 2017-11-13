@@ -3,7 +3,7 @@
 Created on Mon Nov 13 12:18:38 2017
 
 @author: ArvindKeprate
-"""
+#"Monte Carlo Simulation Code for predicting Remaining Fatigue Life""
 
 def my_RFL():
     import numpy as np
