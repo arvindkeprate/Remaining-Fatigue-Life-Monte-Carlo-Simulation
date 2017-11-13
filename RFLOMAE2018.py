@@ -32,6 +32,13 @@ def my_RFL():
             a = a + C*del_K**m# Paris Law
         EOL.append(counter)
     #print(EOL)
+    #data = EOL
+    #sns.set_style('whitegrid')
+    #sns.kdeplot(np.array(data), bw = 0.5)
+    #plt.show()
+    #print(("Mean of RFL is: %.2f")% np.mean(data))
+    #print(("Median of RFL is: %.2f")% np.median(data))
+    #print(("Standard Deviation of RFL is: %.2f")% np.std(data))
     #print(alist)
     #print(Clist)
     #print(sigmalist)
