@@ -14,8 +14,8 @@ def my_RFL():
     alist = []
     Clist = []
     sigmalist = []
-    cycles = int(input("Enter Number of Cycles:"))
-    for i in range(cycles):
+    samples = int(input("Enter Number of Samples:"))
+    for i in range(samples):
         a_initial = np.random.lognormal(-0.0653, 0.0533)#random initial crack size
         C = np.random.lognormal(-28.3518, 0.3708)#random value of parameter C
         m = 3
