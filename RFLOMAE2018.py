@@ -2,7 +2,7 @@
 """
 Created on Mon Nov 13 12:18:38 2017
 
-@author: 2913752
+@author: ArvindKeprate
 """
 
 def my_RFL():
@@ -38,8 +38,6 @@ def my_RFL():
     CompList = [alist, Clist, sigmalist, EOL]# List of lists
     total = np.array(CompList)# 2D Numpy array
     trans_total = total.transpose()# transpose of 2D array
-    trans_total.shape
-    trans_total.dtype
     #print(trans_total)
     df_trans_total = pd.DataFrame(trans_total, columns = ["Initial Crack Size", "C", "Sigma", "RFL"])# converting 2D array to dataframe
     print(df_trans_total)
