@@ -3,19 +3,21 @@
 Created on Mon Nov 13 12:18:38 2017
 
 @author: ArvindKeprate
-#"Monte Carlo Simulation Code for predicting Remaining Fatigue Life""
+#"Crude Monte Carlo Simulation Code for Predicting Remaining Fatigue Life""
 
 def my_RFL():
     import numpy as np
     import pandas as pd
     import matplotlib.pyplot as plt
     import seaborn as sns
+    from tqdm import tqdm#package to plot plrogree bar
+    from time import sleep
     EOL = []
     alist = []
     Clist = []
     sigmalist = []
     samples = int(input("Enter Number of Samples:"))
-    for i in range(samples):
+    for i in tqdm(range(samples)):
         a_initial = np.random.lognormal(-0.0653, 0.0533)#random initial crack size
         C = np.random.lognormal(-28.3518, 0.3708)#random value of parameter C
         m = 3
@@ -31,6 +33,7 @@ def my_RFL():
             del_K = sigma*Y*(3.14*a)**(0.5)# Paris Law
             a = a + C*del_K**m# Paris Law
         EOL.append(counter)
+        sleep(1)
     #print(EOL)
     #data = EOL
     #sns.set_style('whitegrid')
