@@ -10,7 +10,7 @@ def my_RFL():
     import pandas as pd
     import matplotlib.pyplot as plt
     import seaborn as sns
-    from tqdm import tqdm#package to plot plrogree bar
+    from tqdm import tqdm#package to plot progress bar
     from time import sleep
     EOL = []
     alist = []
