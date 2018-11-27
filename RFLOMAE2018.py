@@ -4,14 +4,13 @@ Created on Mon Nov 13 12:18:38 2017
 
 @author: ArvindKeprate
 #"Crude Monte Carlo Simulation Code for Predicting Remaining Fatigue Life""
-
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from tqdm import tqdm#package to plot progress bar
+from time import sleep
 def my_RFL():
-    import numpy as np
-    import pandas as pd
-    import matplotlib.pyplot as plt
-    import seaborn as sns
-    from tqdm import tqdm#package to plot progress bar
-    from time import sleep
     EOL = []
     alist = []
     Clist = []
